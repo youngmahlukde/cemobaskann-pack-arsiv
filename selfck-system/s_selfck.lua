@@ -20,8 +20,8 @@ function sendCKRequest(target, text)
 	for key, value in ipairs(exports.mrp_global:getAdmins()) do
 		local adminduty = getElementData(value, "duty_admin")
 		if adminduty == 1 then
-			outputChatBox("[SELF-CK] " .. getPlayerName( target ):gsub("_", " ") .. " (" .. playerID .. ") isimli kişi karakter ölümü isteği yolladı, sebebi: '" .. text .. "'.", value, 255, 0, 0)
-			outputChatBox("[SELF-CK] Kabul etmek için /cka Reddetmek için /ckd.", value, 255, 255, 255)
+			outputChatBox("[Karakter Ölümü] " .. getPlayerName( target ):gsub("_", " ") .. " (" .. playerID .. ") isimli kişi karakter ölümü isteği yolladı, sebebi: '" .. text .. "'.", value, 255, 0, 0)
+			outputChatBox("[Karakter Ölümü] Kabul etmek için /cka Reddetmek için /ckd.", value, 255, 255, 255)
 		end
 		triggerClientEvent( value, "addOneToCKCount", value )
 	end
@@ -32,7 +32,7 @@ end
 addEvent( "sendCKRequest", true )
 addEventHandler( "sendCKRequest", getRootElement(), sendCKRequest )
 
-function approveCK(thePlayer, commandName, targetPlayer)
+function approveCK(thePlayer, commandName, targetPlayer
 	if exports.mrp_integration:isPlayerTrialAdmin(thePlayer) then
 		if not (targetPlayer) then
 			outputChatBox("SYNTAX: /" .. commandName .. " [id]", thePlayer, 255, 194, 14)
@@ -66,7 +66,7 @@ function approveCK(thePlayer, commandName, targetPlayer)
 							for key, value in ipairs(exports.mrp_global:getAdmins()) do
 								local adminduty = getElementData(value, "duty_admin")
 								if adminduty == 1 then
-									outputChatBox("[SELF-CK] " .. getPlayerName(targetPlayer):gsub("_", " ") .. "'s Self-CK request was accepted by " .. getPlayerName(thePlayer):gsub("_", " ") .. ".", value, 255, 0, 0)
+									outputChatBox("[Karakter Ölümü] " .. getPlayerName(targetPlayer):gsub("_", " ") .. "'s Karakter ölümü isteğiniz kabul edildi! " .. getPlayerName(thePlayer):gsub("_", " ") .. ".", value, 255, 0, 0)
 								end
 								triggerClientEvent( value, "subtractOneFromCKCount", value )
 							end
@@ -75,7 +75,7 @@ function approveCK(thePlayer, commandName, targetPlayer)
 						--triggerEvent("updateCharacters", targetPlayer)
 						--triggerClientEvent(targetPlayer, "accounts:logout", targetPlayer)
 					else
-						outputChatBox("This player forgot to close their CK request before changing character. Closing CK request now.", thePlayer, 255, 0, 0)
+						outputChatBox("Karakteriniz yaşamıyor, yeni karakter açın veya karakter değiştirin.", thePlayer, 255, 0, 0)
 						setElementData(targetPlayer, "ckstatus", 0)
 						setElementData(targetPlayer, "ckreason", 0)
 						setElementData(targetPlayer, "ckchar", 0)
