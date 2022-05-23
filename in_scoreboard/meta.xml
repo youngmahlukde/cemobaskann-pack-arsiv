@@ -1,0 +1,24 @@
+<meta>	
+
+	<!--
+	
+		@author:pavlov
+		@description:Scoreboard
+	
+	-->
+		
+	<script src='server.lua' type='server' />
+	<script src='client.lua' type='client' protected="true" cache="false" />
+	
+	<file src='components/bleep.mp3' />
+	<file src='components/logo.png' />
+	<file src='components/lights.png' />
+	<file src='components/font.ttf' />
+	
+	<script src='packages/classlib.lua' type="shared"/>
+	<script src='packages/async.lua' type="shared"/>
+
+	<export function='isVisible' type="client" />
+
+	<oop>true</oop>
+</meta>	
