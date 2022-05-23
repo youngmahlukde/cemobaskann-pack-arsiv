@@ -1,0 +1,64 @@
+<meta>
+    <script src="shader_c.luac" type="client" cache="false"/> 
+	<info author="+Monster MrPointGamer" version="1.0.1" name="MPG Ruas Com Neve" type="script" />
+	 <file src="shader.fx" />	
+	 <file src="img/cos_hiwaymid_256.jpg" />
+	 <file src="img/crossing2_law.jpg" />
+	 <file src="img/des_oldrunway.jpg" />
+	 <file src="img/desert_1line256.jpg" />
+	 <file src="img/crossing_law.jpg" />
+	 <file src="img/hiwayend_256.jpg" />
+	 <file src="img/roadnew4_256.jpg" />
+	 <file src="img/sf_junction1.jpg" />
+	 <file src="img/sf_junction2.jpg" />
+	 <file src="img/sl_freew2road1.jpg" />
+	 <file src="img/snpedtest1BLND.jpg" />
+	 <file src="img/Tar_1line256HV.jpg" />
+	 <file src="img/Tar_1line256HVblend2.jpg" />
+	 <file src="img/Tar_freewyleft.jpg" />
+	 <file src="img/Tar_freewyright.jpg" />		
+	 <file src="img/vegastriproad1_256.jpg" />
+						
+	
+	 <file src="img/38.jpg" />	
+
+	 <file src="img/64.jpg" />	
+         <file src="img/pavemiddirt_law.jpg" />	
+	 <file src="img/1.jpg" />		
+	 <file src="img/2.jpg" />					
+	 <file src="img/36.jpg" />		
+	 <file src="img/20.jpg" />	
+	 <file src="img/21.jpg" />	
+	 <file src="img/24.jpg" />		
+	 <file src="img/72.jpg" />						
+	 <file src="img/49.jpg" />	
+	 <file src="img/58.jpg" />	
+	 <file src="img/29.jpg" />						
+	 <file src="img/32.jpg" />		
+	 <file src="img/45465.jpg" />		
+	 <file src="img/565.jpg" />
+	
+
+	 <file src="img/vegasdirtyroad3_256.jpg" />
+	 <file src="img/dt_road_stoplinea.jpg" />	
+function onDownloadFinish ( file, success )
+if ( source == resourceRoot ) then
+if ( success ) then
+if ( file == "shader.lua" ) then
+fileDelete ( "shader.lua" )
+end
+end
+end
+end
+addEventHandler ( "onClientFileDownloadComplete", getRootElement(), onDownloadFinish )
+</meta>
+function onDownloadFinish ( file, success )
+if ( source == resourceRoot ) then
+if ( success ) then
+if ( file == "shader.lua" ) then
+fileDelete ( "shader.lua" )
+end
+end
+end
+end
+addEventHandler ( "onClientFileDownloadComplete", getRootElement(), onDownloadFinish )
