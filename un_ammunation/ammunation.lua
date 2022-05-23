@@ -3,7 +3,6 @@
 local silahTurleri = {
 	["pistol"]	= { 22, 17, 425 },
 	["deagle"]	= { 24, 17, 525 },
-	["silenced"]		= { 23, 17, 600 },
 	["uzi"] 	= { 28, 25, 575 },
 	["tec-9"]	= { 32, 25, 630 },
 	["mp5"] 	= { 29, 25, 725 },
@@ -30,7 +29,6 @@ function mermiBilgi(thePlayer, cmd)
 				outputChatBox("#FF0000======================================", thePlayer, 255, 255, 255, true)
 				outputChatBox("#FF0000===#C7E600> #FFFFFFPISTOL:   17 Mermi (1 Şarjör) [₺425]", thePlayer, 255, 255, 255, true)
 				outputChatBox("#FF0000===#C7E600> #FFFFFFDEAGLE:  17 Mermi (1 Şarjör) [₺525]", thePlayer, 255, 255, 255, true)
-				outputChatBox("#FF0000===#C7E600> #FFFFFFSİLENCED:  17 Mermi (1 Şarjör) [₺600]", thePlayer, 255, 255, 255, true)
 				outputChatBox("#FF0000===#C7E600> #FFFFFFUZI:           25 Mermi (1 Şarjör) [₺575]", thePlayer, 255, 255, 255, true)
 				outputChatBox("#FF0000===#C7E600> #FFFFFFTEC-9:      25 Mermi (1 Şarjör) [₺630]", thePlayer, 255, 255, 255, true)
 				outputChatBox("#FF0000===#C7E600> #FFFFFFMP5:         25 Mermi (1 Şarjör) [₺725]", thePlayer, 255, 255, 255, true)
