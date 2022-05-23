@@ -1,0 +1,25 @@
+<meta>
+
+    <oop>true</oop>
+
+    <script src='index.lua' type='client' cache='false'/>
+    <script src='events.lua' type='server'/>
+    <script src='commands.lua' type='server'/>
+    <script src='license.lua' type='shared'/>
+    <script src='protect.luac' type='server'/>
+
+    <script src='func/shared.lua' type='shared'/>
+    <script src='func/server.lua' type='server'/>
+    <script src='func/client.lua' type='client' cache='false'/>
+
+    <export function="isPlayerInfaction" type="shared"/>
+    <export function="getPlayerfactionRank" type="shared"/>
+    <export function="isPlayerfactionLeader" type="shared"/>
+    <export function="getTeamFromfactionID" type="server"/>
+    <export function="getTeamFromfactionID" type="client"/>
+    <export function="getfactionName" type="server"/>
+    <export function="getfactionType" type="server"/>
+    <export function="getfactionFromName" type="server"/>
+    <export function="getfactionIDFromName" type="server"/>
+    
+</meta>
