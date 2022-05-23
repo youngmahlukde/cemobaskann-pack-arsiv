@@ -1,7 +1,7 @@
 
 
         local screenW, screenH = guiGetScreenSize()
-        window = guiCreateWindow((screenW - 730) / 2, (screenH - 406) / 2, 730, 406, "Yakın Çevrede Çıkan Oyuncular 99:Creation", false)
+        window = guiCreateWindow((screenW - 730) / 2, (screenH - 406) / 2, 730, 406, "Yakın Çevrede Çıkan Oyuncular Crown:Creation", false)
         guiWindowSetSizable(window, false)
        guiSetVisible(window,false)
         gridlist = guiCreateGridList(9, 25, 711, 315, false, window)
