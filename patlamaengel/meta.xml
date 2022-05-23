@@ -1,0 +1,4 @@
+<meta>
+	<info author="mahluk" version="1.5.9" name="Araba Patlama engel" type="script"/>
+	<script src="server.lua" type="server"/>
+</meta>
