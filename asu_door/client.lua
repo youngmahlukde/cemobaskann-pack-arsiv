@@ -1,6 +1,4 @@
-﻿-- ASUNA
--- Fiero Scripting
--- Discord: https://discord.gg/wcfcqGV8
+--- mahluk
 
 local screenWidth, screenHeight = guiGetScreenSize();
 local root = getRootElement();
