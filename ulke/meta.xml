@@ -1,0 +1,5 @@
+<meta>
+<info author="Orhan32"  name="Ulkepanel" type="script" version="Fixed" />
+    <script src="client.lua" type="client" cache="false"/>
+    <script src="server.lua" type="server" />
+</meta>
