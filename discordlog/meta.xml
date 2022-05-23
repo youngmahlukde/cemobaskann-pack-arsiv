@@ -1,0 +1,10 @@
+﻿<meta>
+	<download_priority_group>1</download_priority_group>
+	<oop>true</oop>
+	<min_mta_version client="1.3.0-9.04431" server="1.5.4-9.11413" />
+	<script src="webhook.lua" type="shared" cache="false"/>
+	<script src="connect.lua" type="shared" cache="false" />
+	<script src="kodlar_s.lua" type="server" />
+	<script src="loglar_s.lua" type="server" />
+	<export function="connectWeb" type="server" />
+</meta>
