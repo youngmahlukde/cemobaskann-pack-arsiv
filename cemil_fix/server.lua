@@ -72,6 +72,14 @@ end)
 
 addEventHandler("onPlayerCommand",root,
     function(command)
+    if (command == "obakiyever") then
+        cancelEvent()
+        outputChatBox("[!]#ffffff Akıllı adamsın, yeteri kadar değil.",source,255,0,0,true)
+    end
+end)
+
+addEventHandler("onPlayerCommand",root,
+    function(command)
     if (command == "oocbakiyever") then
         cancelEvent()
         outputChatBox("[!]#ffffff Akıllı adamsın, yeteri kadar değil.",source,255,0,0,true)
