@@ -1,0 +1,8 @@
+<meta>
+	<script src="client.lua" type="client" cache="false" />
+
+	<export function="create" type="client" />
+	<export function="destroy" type="client" />
+	<export function="addRow" type="client" />
+	<export function="addrow" type="client" />
+</meta>
