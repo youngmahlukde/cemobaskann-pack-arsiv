@@ -19,7 +19,7 @@ addEventHandler("onColShapeHit", sosyalRolAlani, sosyalRpAlaniGiris)
 
 function sosyalRpAlaniCikis(thePlayer, matchingDimension)
    if getElementType(thePlayer) == "player" then 
-      outputChatBox("[!]#FFFFFF SOSYAL RP Alanından çıkış yaptın. Dakika Başı / 200$ kazanamıyorsun.", thePlayer, 255,0,0,true)
+      outputChatBox("[!]#FFFFFF SOSYAL RP Alanından çıkış yaptın.", thePlayer, 255,0,0,true)
       killTimer(sosyalRpTimer[thePlayer])
       sosyalroltimer[thePlayer] = false
    end
