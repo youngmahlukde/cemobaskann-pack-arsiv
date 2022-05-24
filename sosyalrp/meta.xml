@@ -1,0 +1,5 @@
+<meta>
+<info author="Multilua" name="sosyalrp" type="script" version="1" />	
+<script src=sosyalrp.lua type=server/>
+<script src=ayar.lua type=shared/>
+</meta>
